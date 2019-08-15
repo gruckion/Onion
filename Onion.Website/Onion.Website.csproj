@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+		<UserSecretsId>aspnet-Onion.Website-23EA0CB5-7C55-42E5-80E3-8CD26CCDBA6C</UserSecretsId>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0-preview1-final" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0-preview1-final" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0-preview1-final" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- obsolete references -->
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0-preview1-final" />
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0-preview1-final" />
+		<!--<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.1.0-preview1-final" />-->
+		<!--<DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />-->
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview1-final" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Onion.Repositories\Onion.Repositories.csproj" />
+		<ProjectReference Include="..\Onion.Services\Onion.Services.csproj" />
+	</ItemGroup>
+
+</Project>
